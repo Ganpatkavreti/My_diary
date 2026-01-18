@@ -3,43 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>My Wiki Diary</title>
-
-    <!-- Responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ===== NAVBAR ===== -->
 <nav class="navbar">
     <div class="logo">📘 MY DIARY</div>
 
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
     <ul class="menu" id="menu">
-        <li class="dropdown">
+        <li class="dropdown" onclick="toggleDropdown(this)">
             दर्शन
             <ul class="dropdown-content" id="darshan-list"></ul>
         </li>
-        <li class="dropdown">
+
+        <li class="dropdown" onclick="toggleDropdown(this)">
             विज्ञान
             <ul class="dropdown-content" id="vigyan-list"></ul>
         </li>
-        <li class="dropdown">
+
+        <li class="dropdown" onclick="toggleDropdown(this)">
             अन्य
             <ul class="dropdown-content" id="anya-list"></ul>
         </li>
     </ul>
 </nav>
 
-<!-- ===== MAIN CONTENT ===== -->
 <main>
-    <h2>📝 नवीनतम लेख</h2>
-    <iframe id="articleFrame"></iframe>
+    <h2>📝 लेख सूची</h2>
+    <div id="articleList" class="article-list"></div>
 </main>
 
-<!-- ===== FOOTER ===== -->
 <footer>
     <p>© 2026 | आपका नाम</p>
     <p>📱 मोबाइल: 9XXXXXXXXX</p>
