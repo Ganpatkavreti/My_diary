@@ -1,0 +1,25 @@
+{
+  "latest": "articles/darshan1.html",
+  "articles": [
+    {
+      "title": "जीवन का दर्शन",
+      "category": "darshan",
+      "path": "articles/darshan1.html"
+    },
+     {
+      "title": "जीवन को जानने का दर्शन",
+      "category": "darshan",
+      "path": "articles/darshan2.html"
+    },
+    {
+      "title": "विज्ञान और मानव",
+      "category": "vigyan",
+      "path": "articles/vigyan1.html"
+    },
+    {
+      "title": "अन्य विचार",
+      "category": "anya",
+      "path": "articles/anya1.html"
+    }
+  ]
+}
