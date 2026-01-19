@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #f4f6fb;
+}
+
+/* ===== NAVBAR ===== */
+header {
+  background: #3f51b5;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-btn {
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* DROPDOWN */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  color: #000;
+  top: 30px;
+  min-width: 180px;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.dropdown-content li {
+  padding: 8px;
+}
+
+.dropdown-content li:hover {
+  background: #eee;
+}
+
+.dropdown.open .dropdown-content {
+  display: block;
+}
+
+/* ===== HOME ===== */
+.page-title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.articles-grid {
+  display: grid;
+  gap: 20px;
+  padding: 15px;
+}
+
+/* ARTICLE CARD */
+.article-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.article-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.article-card .content {
+  padding: 12px;
+}
+
+.article-card h3 {
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 13px;
+  color: gray;
+}
+
+.read-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #3f51b5;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #ffd54f;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 768px) {
+  .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .articles-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #3f51b5;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+  }
+  .menu.show {
+    display: flex;
+  }
+}
