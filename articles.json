@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "title": "जीवन दर्शन",
+      "date": "10 Jan 2026",
+      "summary": "जीवन का वास्तविक अर्थ क्या है?",
+      "category": "darshan",
+      "image": "images/darshan1.jpg",
+      "path": "articles/darshan1.html"
+    },
+    {
+      "title": "विज्ञान और भविष्य",
+      "date": "12 Jan 2026",
+      "summary": "विज्ञान कैसे दुनिया बदल रहा है",
+      "category": "vigyan",
+      "image": "images/vigyan1.jpg",
+      "path": "articles/vigyan1.html"
+    }
+  ]
+}
