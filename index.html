@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Wiki Diary</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header>
+  <div class="logo">📘 MY DIARY</div>
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <ul class="menu" id="menu">
+    <li><a href="index.html">होम</a></li>
+    <li class="dropdown" onclick="toggleDropdown(this)">दर्शन ▼
+      <ul class="dropdown-content" id="darshan-list"></ul>
+    </li>
+    <li class="dropdown" onclick="toggleDropdown(this)">विज्ञान ▼
+      <ul class="dropdown-content" id="vigyan-list"></ul>
+    </li>
+    <li class="dropdown" onclick="toggleDropdown(this)">अन्य ▼
+      <ul class="dropdown-content" id="anya-list"></ul>
+    </li>
+    <li><a href="gallery.html">फोटो गैलरी</a></li>
+    <li><a href="about.html">About Us</a></li>
+  </ul>
+</header>
+
+<!-- ===== CONTENT ===== -->
+<main>
+  <h2 class="page-title">नवीन लेख</h2>
+  <div class="articles-grid" id="articleList"></div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© Devika Kavreti</p>
+  <p>📞 9000000000 | ✉️ example@gmail.com</p>
+  <p><a href="about.html">About Us</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
