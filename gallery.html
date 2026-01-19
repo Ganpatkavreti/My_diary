@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">📘 MY DIARY</div>
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  <ul class="menu" id="menu">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about.html">About Us</a></li>
+  </ul>
+</header>
+
+<main>
+  <h2 class="page-title">Photo Gallery</h2>
+  <div class="articles-grid" id="gallery"></div>
+</main>
+
+<footer>
+  <p>© Devika Kavreti</p>
+</footer>
+
+<script>
+fetch("articles.json")
+.then(res=>res.json())
+.then(data=>{
+  const g=document.getElementById("gallery");
+  data.articles.forEach(a=>{
+    const img=document.createElement("img");
+    img.src=a.image;
+    img.style.width="100%";
+    g.appendChild(img);
+  });
+});
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
